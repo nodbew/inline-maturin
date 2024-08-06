@@ -3,7 +3,7 @@ import inline_maturin
 def test_build():
 
     # ビルド
-    py_inline_maturin.build_maturin_project('maturin_test/pymodtest')
+    inline_maturin.build_maturin_project('maturin_test/pymodtest')
 
     # 関数のチェック
     import pymodtest
