@@ -17,7 +17,7 @@ def build_maturin_project(name: str) -> None:
     # maturin buildはソースディレクトリで実行しなければならないため
     os.chdir('./' + str(name))
 
-    # ビルドとインストール
+    # ビルドとwheelのインストール
     run("maturin build --verbose")
     for p in Path("./target/wheels").iterdir():
         run(f"pip install {p}")
