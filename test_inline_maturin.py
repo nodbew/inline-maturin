@@ -1,7 +1,3 @@
-import os
-from pathlib import Path
-from shutil import rmtree
-
 import py_inline_maturin
 
 def test_build():
