@@ -1,4 +1,4 @@
-import py_inline_maturin
+import inline_maturin
 
 def test_build():
 
